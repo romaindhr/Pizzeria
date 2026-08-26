@@ -12,3 +12,10 @@ public class PizzaModel
             ? null
             : Ingredients.Sum(i => i.Price!.Value);
 }
+
+public sealed class PizzaData
+{
+    public string Id { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string[] IngredientIds { get; set; } = [];
+}

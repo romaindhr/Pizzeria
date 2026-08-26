@@ -9,5 +9,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="Data\pizza.json"
+        CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Data\ingredient.json"
+        CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 
 </Project>
