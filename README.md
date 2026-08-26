@@ -1,37 +1,63 @@
-Installation
+## 🚀 Installation
 
-Cloner le repository :
+### 1. Cloner le repository
 
+```bash
 git clone https://github.com/romaindhr/Pizzeria.git
+```
 
-Entrer dans le dossier :
+### 2. Accéder au projet
 
+```bash
 cd Pizzeria
+```
 
-Restaurer les dépendances :
+### 3. Restaurer les dépendances
 
+```bash
 dotnet restore
+```
 
-Builder puis lancer l'application :
+### 4. Compiler le projet
 
+```bash
 dotnet build
+```
 
+### 5. Lancer l'application
+
+```bash
 dotnet run
+```
 
-L'API devrait ensuite être accessible à une adresse similaire à :
+Une fois l'application démarrée, l'API devrait être accessible à une adresse similaire à :
 
+```text
 https://localhost:7***
+```
 
 ou :
 
+```text
 http://localhost:5***
+```
 
-Le port exact est affiché dans le terminal au démarrage.
+> 💡 **Note :** le port exact utilisé par l'application est affiché dans le terminal au démarrage.
 
-Swagger
+---
 
-Lorsque l'application est lancée, ouvrir :
+## 📖 Swagger
 
+Une fois l'application lancée, l'interface Swagger est disponible à l'adresse :
+
+```text
 https://localhost:7***/swagger
+```
 
-Swagger permet de consulter et tester les endpoints de l'API directement depuis le navigateur.
+Swagger permet de :
+
+* consulter les endpoints disponibles ;
+* visualiser les paramètres et modèles de données ;
+* tester directement les requêtes de l'API depuis le navigateur.
+
+> 💡 Remplace `7***` par le port HTTPS affiché dans ton terminal au lancement de l'application.
