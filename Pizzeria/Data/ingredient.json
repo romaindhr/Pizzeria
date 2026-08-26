@@ -1,0 +1,158 @@
+[
+  {
+    "id": "tomato-sauce",
+    "name": "Sauce tomate",
+    "price": 1.0,
+    "category": "Sauce"
+  },
+  {
+    "id": "barbecue-sauce",
+    "name": "Sauce barbecue",
+    "price": 2.0,
+    "category": "Sauce"
+  },
+  {
+    "id": "creme-fraiche",
+    "name": "Crème fraîche",
+    "price": 1.5,
+    "category": "Sauce"
+  },
+  {
+    "id": "samurai-sauce",
+    "name": "Sauce samouraï",
+    "price": 1.0,
+    "category": "Sauce"
+  },
+  {
+    "id": "roasted-chicken",
+    "name": "Poulet rôti",
+    "price": 6.0,
+    "category": "Viande"
+  },
+  {
+    "id": "ground-beef",
+    "name": "Émietté de bœuf",
+    "price": 4.5,
+    "category": "Viande"
+  },
+  {
+    "id": "merguez",
+    "name": "Merguez",
+    "price": 5.0,
+    "category": "Viande"
+  },
+  {
+    "id": "ham",
+    "name": "Jambon",
+    "price": 4.5,
+    "category": "Viande"
+  },
+  {
+    "id": "pepperoni",
+    "name": "Saucisse pepperoni",
+    "price": 6.0,
+    "category": "Viande"
+  },
+  {
+    "id": "bacon",
+    "name": "Lardons",
+    "price": 5.5,
+    "category": "Viande"
+  },
+  {
+    "id": "smoked-salmon",
+    "name": "Saumon fumé",
+    "price": 6.0,
+    "category": "Poisson"
+  },
+  {
+    "id": "mushrooms",
+    "name": "Champignons",
+    "price": 2.0,
+    "category": "Légumes"
+  },
+  {
+    "id": "red-onions",
+    "name": "Oignons rouges",
+    "price": 3.5,
+    "category": "Légumes"
+  },
+  {
+    "id": "black-olives",
+    "name": "Olives noires",
+    "price": 3.0,
+    "category": "Légumes"
+  },
+  {
+    "id": "green-peppers",
+    "name": "Poivrons verts",
+    "price": 3.0,
+    "category": "Légumes"
+  },
+  {
+    "id": "tomatoes",
+    "name": "Tomates",
+    "price": 3.0,
+    "category": "Légumes"
+  },
+  {
+    "id": "honey",
+    "name": "Miel",
+    "price": 5.0,
+    "category": "Miel"
+  },
+  {
+    "id": "pineapple",
+    "name": "Ananas",
+    "price": 5.0,
+    "category": "Ananas"
+  },
+  {
+    "id": "mozzarella",
+    "name": "Mozzarella",
+    "price": 2.0,
+    "category": "Fromage"
+  },
+  {
+    "id": "goat-cheese",
+    "name": "Fromage de chèvre",
+    "price": 4.0,
+    "category": "Fromage"
+  },
+  {
+    "id": "emmental",
+    "name": "Emmental",
+    "price": 2.0,
+    "category": "Fromage"
+  },
+  {
+    "id": "fourme-dambert",
+    "name": "Fourme d'Ambert",
+    "price": 4.0,
+    "category": "Fromage"
+  },
+  {
+    "id": "raclette-cheese",
+    "name": "Fromage à raclette",
+    "price": 4.0,
+    "category": "Fromage"
+  },
+  {
+    "id": "parmigiano",
+    "name": "Parmigiano",
+    "price": 5.0,
+    "category": "Fromage"
+  },
+  {
+    "id": "potatoes",
+    "name": "Pommes de terre",
+    "price": null,
+    "category": null
+  },
+  {
+    "id": "cured-ham",
+    "name": "Jambon cru",
+    "price": null,
+    "category": "Viande"
+  }
+]

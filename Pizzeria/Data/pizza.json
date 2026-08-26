@@ -1,0 +1,154 @@
+[
+  {
+    "id": "four-cheeses",
+    "name": "4 Fromages",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "goat-cheese",
+      "emmental",
+      "fourme-dambert"
+    ]
+  },
+  {
+    "id": "bpm",
+    "name": "BPM",
+    "ingredientIds": [
+      "barbecue-sauce",
+      "mozzarella",
+      "ground-beef",
+      "roasted-chicken",
+      "merguez"
+    ]
+  },
+  {
+    "id": "pepperoni-lovers",
+    "name": "Pepperoni Lovers",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "pepperoni"
+    ]
+  },
+  {
+    "id": "queen",
+    "name": "Queen",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "ham",
+      "mushrooms"
+    ]
+  },
+  {
+    "id": "montagnarde",
+    "name": "Montagnarde",
+    "ingredientIds": [
+      "creme-fraiche",
+      "mozzarella",
+      "cured-ham",
+      "raclette-cheese",
+      "mushrooms"
+    ]
+  },
+  {
+    "id": "supreme",
+    "name": "Suprême",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "ground-beef",
+      "pepperoni",
+      "mushrooms",
+      "red-onions",
+      "green-peppers"
+    ]
+  },
+  {
+    "id": "raclette",
+    "name": "Raclette",
+    "ingredientIds": [
+      "creme-fraiche",
+      "mozzarella",
+      "potatoes",
+      "bacon",
+      "raclette-cheese"
+    ]
+  },
+  {
+    "id": "goat-cheese-honey",
+    "name": "Chèvre Miel",
+    "ingredientIds": [
+      "creme-fraiche",
+      "mozzarella",
+      "goat-cheese",
+      "honey"
+    ]
+  },
+  {
+    "id": "nordique",
+    "name": "Nordique",
+    "ingredientIds": [
+      "creme-fraiche",
+      "mozzarella",
+      "smoked-salmon"
+    ]
+  },
+  {
+    "id": "campagnarde",
+    "name": "Campagnarde",
+    "ingredientIds": [
+      "creme-fraiche",
+      "mozzarella",
+      "bacon",
+      "red-onions",
+      "mushrooms"
+    ]
+  },
+  {
+    "id": "samurai",
+    "name": "Samouraï",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "merguez",
+      "roasted-chicken",
+      "red-onions",
+      "samurai-sauce"
+    ]
+  },
+  {
+    "id": "chicken-parmesan",
+    "name": "Chicken Parmesan",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "roasted-chicken",
+      "tomatoes",
+      "parmigiano"
+    ]
+  },
+  {
+    "id": "vegetarian",
+    "name": "Végétarienne",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "mushrooms",
+      "red-onions",
+      "green-peppers",
+      "tomatoes",
+      "black-olives"
+    ]
+  },
+  {
+    "id": "hawaiian-ham",
+    "name": "Hawaïenne Jambon",
+    "ingredientIds": [
+      "tomato-sauce",
+      "mozzarella",
+      "ham",
+      "pineapple"
+    ]
+  }
+]
