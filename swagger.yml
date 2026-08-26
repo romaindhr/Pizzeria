@@ -1,0 +1,170 @@
+openapi: '3.0.3'
+info:
+  title: Pizzeria API
+  description: API de gestion des pizzas
+  version: '1.0.0'
+servers:
+  - url: https://localhost:7272
+    description: Serveur HTTPS local ASP.NET Core
+  - url: http://localhost:5028
+    description: Serveur HTTP local ASP.NET Core
+paths:
+  /api/Pizza:
+    get:
+      tags:
+        - Pizzas
+      summary: Récupérer toutes les pizzas
+      responses:
+        '200':
+          description: Liste des pizzas
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pizza'
+    post:
+      tags:
+        - Pizzas
+      summary: Créer une pizza
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PizzaInput'
+      responses:
+        '201':
+          description: Pizza créée
+          headers:
+            Location:
+              description: URL de la pizza créée
+              schema:
+                type: string
+                format: uri-reference
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pizza'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  /api/Pizza/{id}:
+    parameters:
+      - $ref: '#/components/parameters/PizzaId'
+    get:
+      tags:
+        - Pizzas
+      summary: Récupérer une pizza
+      responses:
+        '200':
+          description: Pizza trouvée
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pizza'
+        '404':
+          $ref: '#/components/responses/NotFound'
+    put:
+      tags:
+        - Pizzas
+      summary: Remplacer une pizza
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PizzaInput'
+      responses:
+        '204':
+          description: Pizza mise à jour
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+    delete:
+      tags:
+        - Pizzas
+      summary: Supprimer une pizza
+      responses:
+        '204':
+          description: Pizza supprimée
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+components:
+  parameters:
+    PizzaId:
+      name: id
+      in: path
+      required: true
+      description: Identifiant de la pizza
+      schema:
+        type: string
+  responses:
+    BadRequest:
+      description: Requête invalide
+    NotFound:
+      description: Pizza introuvable
+  schemas:
+    Pizza:
+      type: object
+      required:
+        - id
+        - name
+        - ingredients
+      properties:
+        id:
+          type: string
+          example: pepperoni-lovers
+        name:
+          type: string
+          example: Pepperoni Lovers
+        ingredients:
+          type: array
+          items:
+            $ref: '#/components/schemas/Ingredient'
+        price:
+          type: number
+          format: double
+          nullable: true
+          readOnly: true
+          description: Prix calculé à partir des ingrédients.
+    PizzaInput:
+      type: object
+      required:
+        - name
+        - ingredients
+      properties:
+        id:
+          type: string
+          description: Optionnel à la création; il est généré s'il est absent.
+          example: pepperoni-lovers
+        name:
+          type: string
+          example: Pepperoni Lovers
+        ingredients:
+          type: array
+          items:
+            $ref: '#/components/schemas/Ingredient'
+    Ingredient:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+          example: mozzarella
+        name:
+          type: string
+          example: Mozzarella
+        price:
+          type: number
+          format: double
+          nullable: true
+          example: 2.5
+        category:
+          type: string
+          nullable: true
+          example: cheese

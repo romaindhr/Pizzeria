@@ -8,14 +8,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Data\pizza.json"
-        CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Data\pizza.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Data\ingredient.json"
-        CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Data\ingredient.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
